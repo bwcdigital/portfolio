@@ -1,0 +1,71 @@
+#client-section {
+  width: 100%;
+  min-height: 50vh; /* Use min-height to ensure flexibility */
+  padding: 20px; /* Add some padding for breathing room */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Reduce gap to improve spacing on smaller screens */
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgb(66, 62, 62), rgb(139, 142, 150));
+  box-sizing: border-box; /* Ensure padding is included in total width/height */
+}
+
+.client-logo-container {
+  width: 100%;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  display: flex;
+  gap: 20px; /* Reduce gap to improve spacing on smaller screens */
+  justify-content: center;
+  align-items: center;
+}
+
+.client-logo img {
+  max-width: 100%; /* Ensure images don’t overflow the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.client-heading {
+  font-size: var(--headerFontSize);
+  font-weight: var(--headerFontWeight);
+  text-align: center; /* Center-align text for better presentation */
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  #client-section {
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .client-logo-container {
+    gap: 15px;
+  }
+
+  .client-logo img {
+    width: 200px; /* Adjust image size for smaller screens */
+  }
+
+  .client-heading {
+    font-size: calc(var(--headerFontSize) * 0.8); /* Reduce font size */
+  }
+}
+
+@media (max-width: 480px) {
+  #client-section {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .client-logo-container {
+    gap: 10px;
+  }
+
+  .client-logo img {
+    width: 150px; /* Further adjust image size for smaller screens */
+  }
+
+  .client-heading {
+    font-size: calc(var(--headerFontSize) * 0.7); /* Further reduce font size */
+  }
+}

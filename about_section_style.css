@@ -1,0 +1,79 @@
+/* -----About Section Style----- */
+.about-section {
+  width: 100vw;
+  height: 100%;
+  background-image: url(images/About_profile/about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: darken;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us {
+  color: var(--txtClr);
+  font-size: var(--headerFontSize);
+  font-weight: var(--headerFontWeight);
+  text-align: center;
+  margin: 0 20px;
+}
+
+.about-content {
+  width: 80%;
+  /* max-width: 600px; */
+  height: auto;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0.2rem);
+  border: 1px solid white;
+  text-align: justify;
+  border-radius: 15px;
+  word-spacing: 2px;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.about-text {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .about-content {
+    width: 95%;
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .about-us {
+    font-size: calc(var(--headerFontSize) - 2px);
+  }
+
+  .about-text {
+    font-size: 18px;
+  }
+}
+
+/* Medium devices (portrait tablets and small desktops, 900px and down) */
+@media (max-width: 900px) {
+  .about-content {
+    width: 90%;
+    font-size: 17px;
+  }
+
+  .about-us {
+    font-size: calc(var(--headerFontSize) - 1px);
+  }
+
+  .about-text {
+    font-size: 19px;
+  }
+}

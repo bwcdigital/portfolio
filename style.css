@@ -1,0 +1,20 @@
+:root {
+  --blue: rgb(27, 78, 218) !important;
+  --txtClr: whitesmoke !important;
+  --headingTxtClr: #555;
+  --subheadingTxtClr: rgb(230, 48, 25);
+  --headerFontSize: 50px;
+  --headerFontWeight: 700;
+  --smallScreenFontSize: 40px;
+}
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--txtClr);
+}
+body {
+  background-color: rgb(255, 246, 246);
+  overflow-x: hidden;
+}
