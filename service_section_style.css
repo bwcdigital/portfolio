@@ -1,0 +1,111 @@
+#Service-section {
+  padding: 5rem 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+    rgb(107, 104, 104),
+    rgb(27, 78, 218),
+    rgb(63, 61, 61)
+  );
+  justify-content: center;
+  text-align: center;
+}
+
+.services-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 50px;
+}
+
+.service-wraper {
+  width: 80%;
+  /* max-width: 600px; */
+  height: fit-content;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0.2rem);
+  border: 1px solid white;
+  text-align: justify;
+  border-radius: 15px;
+  word-spacing: 2px;
+  font-size: 18px;
+}
+
+.service-heading {
+  font-size: var(--headerFontSize);
+  font-weight: var(--headerFontWeight);
+}
+
+.sub-heading {
+  color: var(--subheadingTxtClr);
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (phones, 600px and down) */
+@media screen and(max-width: 600px) {
+  .services-container {
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .service-wraper {
+    width: 95%;
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .service-heading {
+    font-size: calc(var(--headerFontSize) - 4px);
+  }
+  .service-content {
+    max-height: 150px; /* Initial height to show the first 500px */
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+
+  .service-content.expanded {
+    max-height: 1000px; /* Increase this value as needed */
+  }
+
+  .read-more-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .read-more-btn:hover {
+    background-color: #2980b9;
+  }
+}
+
+/* Medium devices (portrait tablets and small desktops, 900px and down) */
+@media screen and (max-width: 900px) {
+  .services-container {
+    padding: 20px;
+    gap: 40px;
+  }
+
+  .service-wraper {
+    width: 90%;
+    font-size: 17px;
+    padding: 25px;
+  }
+
+  .service-heading {
+    font-size: calc(var(--headerFontSize) - 2px);
+  }
+}
