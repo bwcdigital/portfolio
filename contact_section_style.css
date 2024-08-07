@@ -55,9 +55,8 @@
   height: 50px;
   padding: 20px;
   font-size: 16px;
-  border-radius: 10px;
-  /* background-color: rgba(255, 255, 255, 0.1); */
-  background-color: rgba(7, 44, 92, 0.1);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(0.2rem);
   border: 1px solid white;
   margin-bottom: 20px;
@@ -70,7 +69,7 @@
   padding: 20px;
   font-size: 1.1rem;
   border-radius: 20px;
-  background-color: rgba(7, 44, 92, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(0.2rem);
   border: 1px solid white;
   margin-bottom: 20px;
@@ -84,9 +83,8 @@
   height: 50px;
   padding: 10px;
   font-size: 1.1rem;
-  border-radius: 10px;
-  /* background-color: rgba(255, 255, 255, 0.1); */
-  background-color: rgba(7, 44, 92, 0.1);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(0.2rem);
   border: 1px solid white;
   margin-bottom: 20px;
@@ -96,7 +94,7 @@
 }
 
 .btn:hover {
-  background-color: #4588e0 !important;
+  background-color: #0056b3;
 }
 
 .contact-info {
@@ -174,7 +172,6 @@
   }
   .contact-heading {
     margin-top: 4rem;
-    font-size: 40px !important;
   }
   .contact-subheading {
     font-size: 25px;

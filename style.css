@@ -2,7 +2,7 @@
   --blue: rgb(27, 78, 218) !important;
   --txtClr: whitesmoke !important;
   --headingTxtClr: #555;
-  --subheadingTxtClr: #b0bfdd;
+  --subheadingTxtClr: rgb(230, 48, 25);
   --headerFontSize: 50px;
   --headerFontWeight: 700;
   --smallScreenFontSize: 40px;

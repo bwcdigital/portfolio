@@ -16,20 +16,20 @@
     <link rel="stylesheet" href="contact_section_style.css">
     <link rel="stylesheet" href="project_section_style.css">
     <style>
-        @media (max-width: 900px) {
-            .project-container {
-                flex-direction: column;
-                padding: 20px;
-            }
-
-            .project-item {
-                margin: 10px 0;
-            }
-
-            .project-wraper {
-                width: 90%;
-            }
+    @media (max-width: 900px) {
+        .project-container {
+            flex-direction: column;
+            padding: 20px;
         }
+
+        .project-item {
+            margin: 10px 0;
+        }
+
+        .project-wraper {
+            width: 90%;
+        }
+    }
     </style>
     <!-- -----Bootstrap css link----- -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -137,7 +137,7 @@
                                 </div>
                                 <div class="member-description">
                                     <h1 class="name">Swechha Yadav</h1>
-                                    <span class="description">Full stack Developer</span>
+                                    <span class="description">Frontent Developer</span>
                                 </div>
                             </div>
                             <div class="team">
@@ -155,7 +155,7 @@
                                 </div>
                                 <div class="member-description">
                                     <h1 class="name">Ajay Kumar Prajapati</h1>
-                                    <span class="description">Frontent</span>
+                                    <span class="description">Tester</span>
                                 </div>
                             </div>
                         </div>
@@ -220,10 +220,16 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+            <div class="team-messege">
+                <h1>A Messege form our Team</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quae optio enim in facere, magnam
+                    autem
+                    labore qui harum architecto libero dicta id, soluta rerum ullam! Illum fuga necessitatibus est.</p>
+            </div>
         </div>
-        <!-- <div class="salutation">
+        <div class="salutation">
 
-        </div> -->
+        </div>
     </div>
     <div id="our-team1">
         <h1 class="our-team-text">Our Team</h1>
@@ -302,7 +308,7 @@
                                 </div>
                                 <div class="member-description">
                                     <h1 class="name">Swechha Yadav</h1>
-                                    <span class="description">Full Stack Developer</span>
+                                    <span class="description">Frontent Developer</span>
                                 </div>
                             </div>
                         </div>
@@ -334,7 +340,7 @@
                                 </div>
                                 <div class="member-description">
                                     <h1 class="name">Ajay Kumar Prajapati</h1>
-                                    <span class="description">Frontent Developer</span>
+                                    <span class="description">Tester</span>
                                 </div>
                             </div>
                         </div>
@@ -413,6 +419,15 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+            <div class="team-messege">
+                <h1>A Messege form our Team</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quae optio enim in facere, magnam
+                    autem
+                    labore qui harum architecto libero dicta id, soluta rerum ullam! Illum fuga necessitatibus est.</p>
+            </div>
+        </div>
+        <div class="salutation">
+
         </div>
     </div>
 
@@ -559,7 +574,15 @@
                     developing
                     enterprise resource planning (ERP) systems, implementing customer relationship management (CRM)
                     software, and setting up
-                </span>
+                    and managing cloud infrastructure on platforms like AWS and Azure. We also provide network design
+                    and
+                    optimization, data
+                    migration, and disaster recovery planning. Additionally, our cybersecurity services include
+                    vulnerability assessments,
+                    penetration testing, and implementing advanced security protocols. Our commitment to excellence and
+                    customer
+                    satisfaction drives us to deliver high-quality services that enhance productivity and drive business
+                    growth.</span>
             </div>
             <div id="project-civil" class="project-wraper">
                 <h2 class="sub-heading">Civil & Architect</h2>
@@ -575,8 +598,10 @@
                     In architectural design, we create aesthetically pleasing and functional spaces tailored to meet our
                     clients' unique
                     needs and visions. We employ advanced software and technologies to deliver precise and efficient
-                    designs.
-
+                    designs. Our team of
+                    skilled professionals is committed to delivering high-quality, sustainable, and cost-effective
+                    solutions. We prioritise
+                    customer satisfaction and work closely with clients to bring their projects to life.
                 </span>
             </div>
             <div id="project-electrical" class="project-wraper">
@@ -593,8 +618,21 @@
                     expertise spans power
                     system analysis, lighting design, and automation project planning, all aimed at providing
                     innovative,
-
-
+                    safe, and
+                    sustainable solutions. Committed to excellence, we ensure every project meets the highest industry
+                    standards.
+                    We prioritise energy efficiency and compliance with industry standards. Our skilled technicians
+                    handle
+                    electrical
+                    installation work, including wiring, panel installations, lighting systems, overhead as well as
+                    underground transmission
+                    lines,transformers and integration of smart technologies.
+                    We also provide maintenance and troubleshooting services to ensure the longevity and reliability of
+                    electrical systems.
+                    Our commitment to quality and safety drives us to deliver exceptional services that meet our
+                    clients'
+                    needs and exceed
+                    their expectations.
                 </span>
             </div>
         </div>
@@ -677,18 +715,19 @@
                         <li class="nav-item mb-2"><a href="#about" class="nav-link p-0 text-muted">About us</a></li>
                         <li class="nav-item mb-2"><a href="#contact-section" class="nav-link p-0 text-muted">Contact
                                 us</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" hidden>Career</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Career</a></li>
                     </ul>
                 </div>
 
                 <div class="col-6 col-md-2 mb-3">
                     <h5>Services</h5>
                     <ul class="footer-link flex-column">
-                        <li class="nav-item mb-2"><a href="#it" class="nav-link p-0 text-muted">It & Software</a></li>
-                        <li class="nav-item mb-2"><a href="#civil" class="nav-link p-0 text-muted">Civil & Architect</a>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Web Designing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mobile Application</a>
                         </li>
-                        <li class="nav-item mb-2"><a href="#electrical" class="nav-link p-0 text-muted">Electrical</a>
-                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Software</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Civil & Architect</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Electrical</a></li>
                     </ul>
                 </div>
 
@@ -722,34 +761,34 @@
     </div>
 
     <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const msg = urlParams.get('msg');
+    const urlParams = new URLSearchParams(window.location.search);
+    const msg = urlParams.get('msg');
 
-        if (msg === "suc") {
-            document.getElementById("icon").classList.add("fa-regular");
-            document.getElementById("icon").classList.add("fa-circle-check");
-            document.getElementById('msg').textContent = " Successfully Sent!";
-            setTimeout(function () {
-                urlParams.delete('msg');
-                const newUrl = window.location.pathname + '?' + urlParams.toString();
-                window.history.replaceState({}, '', newUrl);
-                document.getElementById("icon").classList.remove("fa-regular");
-                document.getElementById("icon").classList.remove("fa-circle-check");
-                document.getElementById('msg').textContent = "";
-            }, 20000);
-        } else {
-            var spanText = document.getElementById('msg');
-            spanText.textContent = msg;
-            spanText.style.color = "red";
-            setTimeout(function () {
-                urlParams.delete('msg');
-                const newUrl = window.location.pathname + '?' + urlParams.toString();
-                window.history.replaceState({}, '', newUrl);
-                document.getElementById("icon").classList.remove("fa-regular");
-                document.getElementById("icon").classList.remove("fa-circle-check");
-                document.getElementById('msg').textContent = "";
-            }, 20000);
-        }
+    if (msg === "suc") {
+        document.getElementById("icon").classList.add("fa-regular");
+        document.getElementById("icon").classList.add("fa-circle-check");
+        document.getElementById('msg').textContent = " Successfully Sent!";
+        setTimeout(function() {
+            urlParams.delete('msg');
+            const newUrl = window.location.pathname + '?' + urlParams.toString();
+            window.history.replaceState({}, '', newUrl);
+            document.getElementById("icon").classList.remove("fa-regular");
+            document.getElementById("icon").classList.remove("fa-circle-check");
+            document.getElementById('msg').textContent = "";
+        }, 20000);
+    } else {
+        var spanText = document.getElementById('msg');
+        spanText.textContent = msg;
+        spanText.style.color = "red";
+        setTimeout(function() {
+            urlParams.delete('msg');
+            const newUrl = window.location.pathname + '?' + urlParams.toString();
+            window.history.replaceState({}, '', newUrl);
+            document.getElementById("icon").classList.remove("fa-regular");
+            document.getElementById("icon").classList.remove("fa-circle-check");
+            document.getElementById('msg').textContent = "";
+        }, 20000);
+    }
     </script>
 
     <script src="https://kit.fontawesome.com/1b7c1e7840.js" crossorigin="anonymous"></script>

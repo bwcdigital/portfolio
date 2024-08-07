@@ -4,20 +4,18 @@ document.addEventListener("DOMContentLoaded", function () {
     var logo = document.querySelector(".logo");
 
     console.log("Scroll position:", scrollPosition);
-    var wd = this.window.innerWidth;
-    if (wd > 600) {
-      if (logo) {
-        if (scrollPosition >= 0.5 * window.innerHeight) {
-          logo.classList.add("show");
-          console.log("Logo shown");
-        } else {
-          logo.classList.remove("show");
-          console.log("Logo hidden");
-        }
+
+    if (logo) {
+      if (scrollPosition >= 0.5 * window.innerHeight) {
+        logo.classList.add("show");
+        console.log("Logo shown");
       } else {
-        console.warn("Logo element not found!");
+        logo.classList.remove("show");
+        console.log("Logo hidden");
       }
-    } else logo.classList.add("show");
+    } else {
+      console.warn("Logo element not found!");
+    }
   });
 });
 
@@ -31,5 +29,5 @@ function showMenu() {
 }
 function hideMenu() {
   slideMenu.style.right = "-150px";
-  // slideIcon.style.display = "none";
+  slideIcon.style.display = "none";
 }

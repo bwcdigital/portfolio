@@ -29,7 +29,6 @@
   font-size: var(--headerFontSize);
   font-weight: var(--headerFontWeight);
   text-align: center; /* Center-align text for better presentation */
-  margin-bottom: 20px;
 }
 
 /* Media queries for smaller screens */
@@ -48,7 +47,7 @@
   }
 
   .client-heading {
-    font-size: 40px !important;
+    font-size: calc(var(--headerFontSize) * 0.8); /* Reduce font size */
   }
 }
 

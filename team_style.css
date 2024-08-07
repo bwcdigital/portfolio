@@ -54,18 +54,11 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-bottom: 50px;
 }
 .name {
   font-size: 30px;
   font-weight: 600;
 }
-.member-description {
-  padding: 20px;
-}
-/* .description {
-  padding-bottom: 30px;
-} */
 .team-image {
   width: 90% !important;
   aspect-ratio: 1/1;
@@ -85,10 +78,6 @@
   width: auto;
   height: 100%;
   transform: translateX(-10%);
-}
-.it-heading {
-  color: rgb(176, 191, 221);
-  margin-bottom: 20px;
 }
 @property --angle {
   syntax: "<angle>";
@@ -127,13 +116,16 @@
   }
 }
 .carousel-control-prev-icon {
-  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23b0bfdd" viewBox="0 0 8 8"><path d="M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z"/></svg>') !important;
+  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ff0000" viewBox="0 0 8 8"><path d="M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z"/></svg>') !important;
 }
 
 .carousel-control-next-icon {
-  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23b0bfdd" viewBox="0 0 8 8"><path d="M2.75 0l4 4-4 4-1.5-1.5 2.5-2.5-2.5-2.5 1.5-1.5z"/></svg>') !important;
+  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ff0000" viewBox="0 0 8 8"><path d="M2.75 0l4 4-4 4-1.5-1.5 2.5-2.5-2.5-2.5 1.5-1.5z"/></svg>') !important;
 }
-
+.team-messege {
+  width: 100%;
+  text-align: center;
+}
 @media (max-width: 600px) {
   #our-team {
     display: none;
@@ -157,14 +149,5 @@
   }
   .it {
     margin-left: 75px;
-  }
-  .it-heading {
-    font-size: 30px;
-  }
-  .name {
-    font-size: 25px;
-  }
-  .our-team-text {
-    font-size: 40px !important;
   }
 }
