@@ -14,8 +14,9 @@
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  /* gap: 50px; */
   position: sticky;
   top: 0;
   width: 100%;
@@ -112,11 +113,13 @@
 
 .home-content h1 {
   font-size: 6vw; /* Responsive font size */
+  margin-bottom: 20px;
 }
 
 .home-content h2 {
   font-size: 4vw;
   color: rgb(207, 165, 255);
+  margin: 20px;
 }
 
 .home-content a {
@@ -132,7 +135,8 @@
 }
 
 .about-btn:hover {
-  background-color: var(--blue);
+  /* background-color: var(--blue); */
+  background-color: #4588e0 !important;
   cursor: pointer;
   color: white;
   text-decoration: none;

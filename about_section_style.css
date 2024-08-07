@@ -1,7 +1,8 @@
 /* -----About Section Style----- */
 .about-section {
+  padding: 2.5rem 0;
   width: 100vw;
-  height: 100%;
+  height: auto;
   background-image: url(images/About_profile/about.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -54,7 +55,7 @@
   }
 
   .about-us {
-    font-size: calc(var(--headerFontSize) - 2px);
+    font-size: 40px !important;
   }
 
   .about-text {
