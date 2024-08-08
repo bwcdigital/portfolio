@@ -51,7 +51,7 @@
 .service-heading {
   font-size: var(--headerFontSize);
   font-weight: var(--headerFontWeight);
-  margin-bottom: 20px;
+  margin-bottom: 45px;
 }
 
 .sub-heading {

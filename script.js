@@ -33,3 +33,24 @@ function hideMenu() {
   slideMenu.style.right = "-150px";
   // slideIcon.style.display = "none";
 }
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   // Get all buttons and text contents
+//   var buttons = document.querySelectorAll(".read-more-btn");
+//   var contents = document.querySelectorAll(".text-content");
+
+//   // Iterate over each button
+//   buttons.forEach(function (button, index) {
+//     button.addEventListener("click", function () {
+//       var content = contents[index];
+
+//       if (content.classList.contains("expanded")) {
+//         content.classList.remove("expanded");
+//         button.textContent = "Read More";
+//       } else {
+//         content.classList.add("expanded");
+//         button.textContent = "Read Less";
+//       }
+//     });
+//   });
+// });

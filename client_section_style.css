@@ -1,7 +1,7 @@
 #client-section {
   width: 100%;
   min-height: 50vh; /* Use min-height to ensure flexibility */
-  padding: 20px; /* Add some padding for breathing room */
+  padding: 2.5rem 0; /* Add some padding for breathing room */
   display: flex;
   flex-direction: column;
   gap: 20px; /* Reduce gap to improve spacing on smaller screens */
@@ -36,7 +36,6 @@
 @media (max-width: 768px) {
   #client-section {
     gap: 15px;
-    padding: 15px;
   }
 
   .client-logo-container {
@@ -55,7 +54,6 @@
 @media (max-width: 480px) {
   #client-section {
     gap: 10px;
-    padding: 10px;
   }
 
   .client-logo-container {
