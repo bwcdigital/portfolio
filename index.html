@@ -16,20 +16,23 @@
     <link rel="stylesheet" href="contact_section_style.css">
     <link rel="stylesheet" href="project_section_style.css">
     <style>
-    @media (max-width: 900px) {
-        .project-container {
-            flex-direction: column;
-            padding: 20px;
-        }
+        @media (max-width: 900px) {
+            .project-container {
+                flex-direction: column;
+                padding: 20px;
+            }
 
-        .project-item {
-            margin: 10px 0;
-        }
+            .project-item {
+                margin: 10px 0;
+            }
 
-        .project-wraper {
-            width: 90%;
+            .project-wraper {
+                width: 90%;
+            }
         }
-    }
+    </style>
+    <style>
+
     </style>
     <!-- -----Bootstrap css link----- -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -83,12 +86,12 @@
     <div id="our-team">
         <h1 class="our-team-text">Our Team</h1>
         <div class="devloper">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="carouselLarge" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active "></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselLarge" data-slide-to="0" class="active "></li>
+                    <li data-target="#carouselLarge" data-slide-to="1"></li>
+                    <li data-target="#carouselLarge" data-slide-to="2"></li>
+                    <li data-target="#carouselLarge" data-slide-to="3"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div id="crousel-item" class="carousel-item active">
@@ -211,35 +214,32 @@
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#carouselLarge" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="false"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#carouselLarge" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
             </div>
         </div>
-        <!-- <div class="salutation">
-
-        </div> -->
     </div>
     <div id="our-team1">
         <h1 class="our-team-text">Our Team</h1>
         <div class="devloper">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="carouselSmall" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active "></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                    <li data-target="#carouselSmall" data-slide-to="0" class="active "></li>
+                    <li data-target="#carouselSmall" data-slide-to="1"></li>
+                    <li data-target="#carouselSmall" data-slide-to="2"></li>
+                    <li data-target="#carouselSmall" data-slide-to="3"></li>
+                    <li data-target="#carouselSmall" data-slide-to="4"></li>
+                    <li data-target="#carouselSmall" data-slide-to="5"></li>
+                    <li data-target="#carouselSmall" data-slide-to="6"></li>
+                    <li data-target="#carouselSmall" data-slide-to="7"></li>
+                    <li data-target="#carouselSmall" data-slide-to="8"></li>
+                    <li data-target="#carouselSmall" data-slide-to="9"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div id="crousel-item" class="carousel-item active">
@@ -404,11 +404,11 @@
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#carouselSmall" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="false"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#carouselSmall" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
@@ -420,7 +420,8 @@
     <div id="about" class="about-section">
         <h1 class="about-us">About Us</h1>
         <div class="about-content">
-            <span class="about-text">Welcome to Blue Waves, a leading provider of comprehensive services across IT &
+            <p class="about-text text-content">Welcome to Blue Waves, a leading provider of comprehensive services
+                across IT &
                 Software, Civil, Architecture, and
                 Electrical Engineering. Our team of dedicated professionals is committed to delivering innovative and
                 efficient
@@ -435,7 +436,8 @@
                 approach and a track record of successful projects. Partner with us for excellence, innovation, and
                 quality
                 in every endeavor.
-            </span>
+            </p>
+            <p class="read-more-btn">Read more</p>
         </div>
     </div>
 
@@ -445,7 +447,8 @@
         <div class="services-container">
             <div id="suppliers" class="service-wraper">
                 <h2 class="sub-heading">Suppliers</h2>
-                <span class="service-content">Our company specialises in supplying a wide range of high-quality office
+                <p class="service-content text-content">Our company specialises in supplying a wide range of
+                    high-quality office
                     materials to various institutions, including
                     the government of Nepal, schools, and private offices. We pride ourselves on our extensive inventory
                     that includes
@@ -466,11 +469,12 @@
                     guidelines,
                     ensuring
                     transparency and accountability.
-                    .</span>
+                    .</p>
+                <p class="read-more-btn">Read more</p>
             </div>
             <div id="it" class="service-wraper">
                 <h2 class="sub-heading">IT</h2>
-                <span class="service-content">Our company specialises in delivering comprehensive IT and software
+                <p class="text-content">Our company specialises in delivering comprehensive IT and software
                     solutions
                     tailored to meet the diverse needs of
                     businesses and organisations. We offer a range of services including custom software development, IT
@@ -488,11 +492,12 @@
                     penetration testing, and implementing advanced security protocols. Our commitment to excellence and
                     customer
                     satisfaction drives us to deliver high-quality services that enhance productivity and drive business
-                    growth.</span>
+                    growth.</p>
+                <p class="read-more-btn">Read more</p>
             </div>
             <div id="civil" class="service-wraper">
                 <h2 class="sub-heading">Civil & Architect</h2>
-                <span class="service-content">Our company excels in providing comprehensive services in civil
+                <p class="service-content text-content">Our company excels in providing comprehensive services in civil
                     construction,
                     structural design, and architectural
                     design. We offer end-to-end civil construction solutions, from surveying, soil test, site
@@ -508,11 +513,13 @@
                     skilled professionals is committed to delivering high-quality, sustainable, and cost-effective
                     solutions. We prioritise
                     customer satisfaction and work closely with clients to bring their projects to life.
-                </span>
+                </p>
+                <p class="read-more-btn">Read more</p>
             </div>
             <div id="electrical" class="service-wraper">
                 <h2 class="sub-heading">Electrical</h2>
-                <span class="Electrical">At Blue Waves, we offer comprehensive electrical engineering services,
+                <p class="Electrical text-content">At Blue Waves, we offer comprehensive electrical engineering
+                    services,
                     leveraging advanced tools and software to deliver
                     exceptional results. Our team utilises AutoCAD Electrical, ETAP, and Revit MEP for precise design
                     and
@@ -539,7 +546,8 @@
                     clients'
                     needs and exceed
                     their expectations.
-                </span>
+                </p>
+                <p class="read-more-btn">Read more</p>
             </div>
         </div>
     </div>
@@ -548,56 +556,38 @@
         <h1 class="project-heading">Running Project</h1>
         <div class="project-container">
             <div id="project-it" class="project-wraper">
-                <h2 class="sub-heading">IT & Software</h2>
-                <span class="project-content">Our company specialises in delivering comprehensive IT and software
-                    solutions
-                    tailored to meet the diverse needs of
-                    businesses and organisations. We offer a range of services including custom software development, IT
-                    consulting, cloud
-                    computing solutions, and robust cybersecurity measures. Our expert team handles specific tasks such
-                    as
-                    developing
-                    enterprise resource planning (ERP) systems, implementing customer relationship management (CRM)
-                    software, and setting up
-                </span>
+                <h2 class="sub-heading">Pretty Little (Wardrobe)</h2>
+                <div class="text-container">
+                    <p class="text-content">
+                        <!-- Text content for cart 1 -->
+                        The project aims to develop a modern, user-friendly e-commerce website for a clothing shop. The
+                        platform will allow
+                        customers to browse, select, and purchase a variety of clothing items online. The website will
+                        feature a robust backend
+                        for inventory management, order processing, and customer service, along with a visually
+                        appealing front-end design that
+                        provides an engaging shopping experience.
+                    </p>
+                    <p class="read-more-btn">Read More</p>
+                </div>
             </div>
             <div id="project-civil" class="project-wraper">
-                <h2 class="sub-heading">Civil & Architect</h2>
-                <span class="project-content">Our company excels in providing comprehensive services in civil
-                    construction,
-                    structural design, and architectural
-                    design. We offer end-to-end civil construction solutions, from surveying, soil test, site
-                    preparation
-                    and project
-                    management to the final build. Our structural design services ensure the safety and integrity of
-                    buildings and
-                    infrastructure through meticulous planning and innovative engineering techniques.
-                    In architectural design, we create aesthetically pleasing and functional spaces tailored to meet our
-                    clients' unique
-                    needs and visions. We employ advanced software and technologies to deliver precise and efficient
-                    designs.
-
-                </span>
-            </div>
-            <div id="project-electrical" class="project-wraper">
-                <h2 class="sub-heading">Electrical</h2>
-                <span class="Electrical">At Blue Waves, we offer comprehensive electrical engineering services,
-                    leveraging advanced tools and software to deliver
-                    exceptional results. Our team utilises AutoCAD Electrical, ETAP, and Revit MEP for precise design
-                    and
-                    modelling,
-                    ensuring robust and efficient electrical systems. On the field, we employ state-of-the-art
-                    instruments
-                    like multimeters,
-                    oscilloscopes, and thermal imaging cameras to perform accurate diagnostics and assessments. Our
-                    expertise spans power
-                    system analysis, lighting design, and automation project planning, all aimed at providing
-                    innovative,
-
-
-                </span>
+                <h2 class="sub-heading">SK Computer Institute</h2>
+                <div class="text-container">
+                    <p class="text-content">
+                        <!-- Text content for cart 1 -->
+                        The website will serve as an online portal for students, parents, and professionals to explore
+                        courses, register for
+                        classes, and stay updated with the latest offerings and events. The platform will emphasize
+                        user-friendly navigation,
+                        informative content, and an engaging design that reflects the institute’s commitment to
+                        quality education.
+                    </p>
+                    <p class="read-more-btn">Read More</p>
+                </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- -----Client Section----- -->
@@ -694,7 +684,7 @@
 
 
 
-                <div class="col-md-5 offset-md-1 mb-3">
+                <div class="col-md-5 offset-md-1 mb-3" hidden>
                     <form>
                         <h5>Subscribe to our newsletter</h5>
                         <p>Monthly digest of what's new and exciting from us.</p>
@@ -702,7 +692,7 @@
 
                         <div class="subscribe-container d-flex flex-column w-100 gap-5">
                             <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                            <button class="btn w-25" type="button">Subscribe</button>
+                            <button class="btn w-30 p-10" type="button">Subscribe</button>
                         </div>
                     </form>
                 </div>
@@ -712,44 +702,68 @@
             <div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top">
                 <p>© 2024 Blue Wave Pvt.Ltd. Inc. All rights reserved.</p>
                 <ul class="list-unstyled d-flex">
-                    <i style="display: block !important;" class="fa-brands fa-square-facebook"></i>
+                    <!-- <i style="display: block !important;" class="fa-brands fa-square-facebook" hidden></i> -->
                     <a href="https://www.youtube.com/@bluewaves-y4v" target="_blank"><i
                             class="fa-brands fa-square-youtube"></i></a>
-                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-square-twitter" hidden></i>
                 </ul>
             </div>
         </footer>
     </div>
 
     <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const msg = urlParams.get('msg');
+        const urlParams = new URLSearchParams(window.location.search);
+        const msg = urlParams.get('msg');
 
-    if (msg === "suc") {
-        document.getElementById("icon").classList.add("fa-regular");
-        document.getElementById("icon").classList.add("fa-circle-check");
-        document.getElementById('msg').textContent = " Successfully Sent!";
-        setTimeout(function() {
-            urlParams.delete('msg');
-            const newUrl = window.location.pathname + '?' + urlParams.toString();
-            window.history.replaceState({}, '', newUrl);
-            document.getElementById("icon").classList.remove("fa-regular");
-            document.getElementById("icon").classList.remove("fa-circle-check");
-            document.getElementById('msg').textContent = "";
-        }, 20000);
-    } else {
-        var spanText = document.getElementById('msg');
-        spanText.textContent = msg;
-        spanText.style.color = "red";
-        setTimeout(function() {
-            urlParams.delete('msg');
-            const newUrl = window.location.pathname + '?' + urlParams.toString();
-            window.history.replaceState({}, '', newUrl);
-            document.getElementById("icon").classList.remove("fa-regular");
-            document.getElementById("icon").classList.remove("fa-circle-check");
-            document.getElementById('msg').textContent = "";
-        }, 20000);
-    }
+        if (msg === "suc") {
+            document.getElementById("icon").classList.add("fa-regular");
+            document.getElementById("icon").classList.add("fa-circle-check");
+            document.getElementById('msg').textContent = " Successfully Sent!";
+            setTimeout(function () {
+                urlParams.delete('msg');
+                const newUrl = window.location.pathname + '?' + urlParams.toString();
+                window.history.replaceState({}, '', newUrl);
+                document.getElementById("icon").classList.remove("fa-regular");
+                document.getElementById("icon").classList.remove("fa-circle-check");
+                document.getElementById('msg').textContent = "";
+            }, 20000);
+        } else {
+            var spanText = document.getElementById('msg');
+            spanText.textContent = msg;
+            spanText.style.color = "red";
+            setTimeout(function () {
+                urlParams.delete('msg');
+                const newUrl = window.location.pathname + '?' + urlParams.toString();
+                window.history.replaceState({}, '', newUrl);
+                document.getElementById("icon").classList.remove("fa-regular");
+                document.getElementById("icon").classList.remove("fa-circle-check");
+                document.getElementById('msg').textContent = "";
+            }, 20000);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all buttons and text contents
+            var buttons = document.querySelectorAll('.read-more-btn');
+            var contents = document.querySelectorAll('.text-content');
+
+            // Iterate over each button
+            buttons.forEach(function (button, index) {
+                button.addEventListener('click', function () {
+                    var content = contents[index];
+
+                    if (content.classList.contains('expanded')) {
+                        content.classList.remove('expanded');
+                        button.textContent = 'Read More';
+                    } else {
+                        content.classList.add('expanded');
+                        button.textContent = 'Read Less';
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+
     </script>
 
     <script src="https://kit.fontawesome.com/1b7c1e7840.js" crossorigin="anonymous"></script>

@@ -8,6 +8,7 @@
 }
 
 #contact-section {
+  padding: 2.5rem 0 !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,6 +99,10 @@
 .btn:hover {
   background-color: #4588e0 !important;
 }
+.contact-item a:hover {
+  text-decoration: none;
+  color: rgb(176, 191, 221) !important;
+}
 
 .contact-info {
   text-align: center;
@@ -169,11 +174,8 @@
     justify-content: center;
     align-items: center;
   }
-  #contact-section {
-    padding: 20px;
-  }
+
   .contact-heading {
-    margin-top: 4rem;
     font-size: 40px !important;
   }
   .contact-subheading {
@@ -190,11 +192,7 @@
 
   .contact-form,
   .contact-info {
-    width: 80%;
-  }
-
-  .contact-container {
-    padding: 20px;
+    width: 90%;
   }
 
   .btn {
