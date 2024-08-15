@@ -4,10 +4,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(
-    rgb(39, 39, 39),
-    rgb(45, 71, 143)
-  );
+  background-image: linear-gradient(rgb(39, 39, 39), rgb(45, 71, 143));
   justify-content: center;
   text-align: center;
 }
@@ -23,10 +20,10 @@
 }
 
 .project-wraper {
-  width: 40%;
+  width: 30%;
   /* max-width: 600px; */
-  height: auto;
-  padding: 25px;
+  height: 100vh;
+  padding: 20px;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(0.2rem);
   border: 1px solid white;
@@ -36,11 +33,12 @@
   align-items: center !important;
   justify-content: center !important;
   margin-top: 40px;
-  &:hover{
+  &:hover {
     scale: 1.02;
   }
 }
-.prettyLittle-img, .skcomputer-img{
+.prettyLittle-img,
+.skcomputer-img {
   width: 100%;
   aspect-ratio: 1;
   border-radius: 8px 8px 0 0;
@@ -48,10 +46,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.prettyLittle-img{
+.prettyLittle-img {
   background-image: url(images/services/prettyLittle.jpg);
 }
-.skcomputer-img{
+.skcomputer-img {
   background-position: 50%;
   background-image: url(images/project/skcomputer.JPG);
 }
@@ -84,6 +82,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   transition: max-height 0.3s ease;
+  margin-top: 10px;
 }
 
 .read-more-btn {
@@ -110,6 +109,7 @@
   .project-wraper {
     width: 95%;
     height: auto;
+    margin-top: 20px;
   }
   .project-heading {
     font-size: 40px !important;
@@ -131,6 +131,8 @@
 @media (max-width: 900px) {
   .project-wraper {
     height: auto;
+    width: 90%;
+    min-width: 320px;
   }
   /* .project-heading {
     font-size: 40px !important;
