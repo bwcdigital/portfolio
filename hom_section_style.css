@@ -39,7 +39,7 @@
   font-weight: 400;
   color: var(--txtClr);
   font-size: 24px;
-  margin-left: 40px;
+  /* margin-left: 40px; */
 }
 
 .logo.show {
@@ -185,5 +185,8 @@
     position: absolute;
     top: 25px;
     right: 25px;
+  }
+  .logo {
+    font-size: 20px;
   }
 }
