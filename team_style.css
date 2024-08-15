@@ -70,6 +70,7 @@
   width: 90% !important;
   aspect-ratio: 1/1;
   border-radius: 50%;
+  border: 2px solid rgb(39, 39, 39);
   box-sizing: border-box;
   overflow: hidden;
   margin-top: 40px;
@@ -95,24 +96,22 @@
   initial-value: 0deg;
   inherits: false;
 }
-.team-image::before {
+/* .team-image::before {
   content: "";
   position: absolute;
   width: 90% !important;
   aspect-ratio: 1/1;
-  scale: 1.02;
+  scale: 1.01;
   background-image: conic-gradient(
-    from var(--angle),
-    transparent,
-    blue /* red,
+    rgb(51, 218, 45),
+    blue, red,
     yellow,
-    blue,
-    rgb(51, 218, 45)  */
+    rgb(51, 218, 45)  
   );
   z-index: -1;
   border-radius: 50%;
   animation: 1s spin forwards infinite;
-}
+} */
 
 .our-team {
   width: 100%;

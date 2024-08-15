@@ -14,9 +14,8 @@
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(
-    rgb(107, 104, 104),
-    rgb(27, 78, 218),
-    rgb(63, 61, 61)
+    rgb(58, 58, 58),
+    rgb(15, 44, 122)
   );
   justify-content: center;
   text-align: center;
@@ -26,7 +25,7 @@
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   /* padding: 50px; */
@@ -34,7 +33,7 @@
 }
 
 .service-wraper {
-  width: 80%;
+  width: 600px;
   /* max-width: 600px; */
   height: auto;
   padding: 25px;
@@ -57,7 +56,45 @@
 .sub-heading {
   color: rgb(176, 191, 221) !important;
 }
-
+.Suppliers-img{
+  background-image: url(images/services/sp.jpg);
+  background-position: 40%;
+  &:hover{
+    background-image: url(images/services/supplier.png);
+  }
+}
+.it-img{
+  background-image: url(images/services/It-2.jpg);
+  &:hover{
+    background-image: url(images/services/It-3.jpg);
+  }
+}
+.civil-img{
+  background-image: url(images/services/civil-3.jpg);
+  background-position: 100%;
+  &:hover{
+    background-image: url(images/services/civil-2.jpg);
+  }
+}
+.electricity-img{
+  background-image: url(images/services/electricity-2.jpg);
+  background-position: 100%;
+  &:hover{
+    background-image: url(images/services/electricity.jpg);
+  }
+}
+.service-img{
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 8px 8px 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 1s;
+  overflow: hidden;
+}
+.service-content{
+  margin-top: 10px;
+}
 /* Media Queries for Responsiveness */
 
 /* Small devices (phones, 600px and down) */
@@ -106,8 +143,6 @@
 /* Medium devices (portrait tablets and small desktops, 900px and down) */
 @media screen and (max-width: 900px) {
   .services-container {
-    padding: 20px;
-    gap: 40px;
   }
 
   .service-wraper {
