@@ -5,9 +5,8 @@
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(
-    rgb(107, 104, 104),
-    rgb(27, 78, 218),
-    rgb(63, 61, 61)
+    rgb(39, 39, 39),
+    rgb(45, 71, 143)
   );
   justify-content: center;
   text-align: center;
@@ -20,14 +19,13 @@
   /* flex-direction: column; */
   align-items: center;
   justify-content: center;
-  padding: 50px;
   gap: 50px;
 }
 
 .project-wraper {
   width: 40%;
   /* max-width: 600px; */
-  height: 350px;
+  height: auto;
   padding: 25px;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(0.2rem);
@@ -37,6 +35,25 @@
   font-size: 18px;
   align-items: center !important;
   justify-content: center !important;
+  margin-top: 40px;
+  &:hover{
+    scale: 1.02;
+  }
+}
+.prettyLittle-img, .skcomputer-img{
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 8px 8px 0 0;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.prettyLittle-img{
+  background-image: url(images/services/prettyLittle.jpg);
+}
+.skcomputer-img{
+  background-position: 50%;
+  background-image: url(images/project/skcomputer.JPG);
 }
 .project-wraper p {
   text-align: justify;
@@ -113,7 +130,6 @@
 /* Medium devices (portrait tablets and small desktops, 900px and down) */
 @media (max-width: 900px) {
   .project-wraper {
-    width: 90%;
     height: auto;
   }
   /* .project-heading {
