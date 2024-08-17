@@ -17,12 +17,13 @@
   align-items: center;
   justify-content: center;
   gap: 50px;
+  flex-wrap: wrap;
 }
 
 .project-wraper {
-  width: 30%;
+  width: 20%;
   /* max-width: 600px; */
-  height: 100vh;
+  height: fit-content;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(0.2rem);
@@ -33,12 +34,16 @@
   align-items: center !important;
   justify-content: center !important;
   margin-top: 40px;
+  box-sizing: border-box;
   &:hover {
     scale: 1.02;
   }
 }
 .prettyLittle-img,
-.skcomputer-img {
+.skcomputer-img,
+.budhi-restro-image,
+.warehouse-image,
+.waste_water_img {
   width: 100%;
   aspect-ratio: 1;
   border-radius: 8px 8px 0 0;
@@ -53,6 +58,15 @@
   background-position: 50%;
   background-image: url(images/project/skcomputer.JPG);
 }
+.budhi-restro-image {
+  background-image: url(images/project/Bodhi_Resort.jpg);
+}
+.warehouse-image {
+  background-image: url(images/project/Warehouse\ .jpg);
+}
+.waste_water_img {
+  background-image: url(images/project/Waste_Water.jpg);
+}
 .project-wraper p {
   text-align: justify;
 }
@@ -65,6 +79,7 @@
 .sub-heading {
   color: var(--subheadingTxtClr);
   text-align: left;
+  font-size: 25px !important;
 }
 .text-container {
   position: relative;
@@ -101,15 +116,28 @@
 
 /* Small devices (phones, 600px and down) */
 /*  */
+
+/* Medium devices (portrait tablets and small desktops, 900px and down) */
+@media (max-width: 900px) {
+  .project-wraper {
+    height: auto;
+    width: 90%;
+    min-width: 320px;
+  }
+  /* .project-heading {
+    font-size: 40px !important;
+  } */
+}
 @media (max-width: 600px) {
   .project-container {
     flex-direction: column;
     padding: 20px;
   }
   .project-wraper {
-    width: 95%;
+    width: 90%;
     height: auto;
     margin-top: 20px;
+    min-width: unset;
   }
   .project-heading {
     font-size: 40px !important;
@@ -122,19 +150,10 @@
     display: block;
     -webkit-line-clamp: unset;
   }
-
+  .sub-heading {
+    font-size: 1.2rem !important;
+  }
   .read-more-btn {
     display: block;
   }
-}
-/* Medium devices (portrait tablets and small desktops, 900px and down) */
-@media (max-width: 900px) {
-  .project-wraper {
-    height: auto;
-    width: 90%;
-    min-width: 320px;
-  }
-  /* .project-heading {
-    font-size: 40px !important;
-  } */
 }
