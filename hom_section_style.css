@@ -2,13 +2,20 @@
   --blue: #3498db;
   --txtClr: #ffffff;
 }
-
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
 #home {
-  background-image: url(https://mapua.sgp1.cdn.digitaloceanspaces.com/modular-frame-images/0OwfrmP75zsJxU8Ww30qgnrFrf7pyeb2PXLAthwq.webp);
+  background-image: url(https://plus.unsplash.com/premium_photo-1685086785054-d047cdc0e525?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D);
   width: 100%;
-  height: 100vh;
+  height: 94vh;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(22, 22, 22, 0.7);
   background-blend-mode: darken;
 }
 
@@ -66,8 +73,22 @@
   transition: background-color 0.3s;
 }
 
-.nav-list li a:hover {
-  background-color: #555;
+.nav-list li {
+  position: relative;
+}
+.nav-list li .nav-items::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transition: 0.3s;
+}
+.nav-list li .nav-items:hover::before {
+  width: 80%;
+  left: 10%;
 }
 
 .dropdown-content {
@@ -89,46 +110,44 @@
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #575757;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.dropbtn:hover {
-  background-color: #575757;
-}
-
 .home-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
-  padding: 0 20px;
+  margin-left: 6vw;
   height: 95%;
-  text-align: center;
+  /* text-align: center; */
   gap: 20px;
 }
 
 .home-content h1 {
-  font-size: 6vw; /* Responsive font size */
+  font-size: 4vw; /* Responsive font size */
   margin-bottom: 20px;
+  color: rgb(25, 110, 223);
 }
 
 .home-content h2 {
-  font-size: 4vw;
-  color: rgb(207, 165, 255);
-  margin: 20px;
+  font-size: 1.5vw;
+  /* color: rgb(207, 165, 255); */
+  color: white;
+  font-weight: 400;
 }
 
 .home-content a {
-  padding: 8px 16px;
+  padding: 10px 18px;
   background-color: transparent;
   border: 1px solid var(--txtClr);
-  font-size: 16px;
-  font-weight: 400;
-  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
   text-decoration: none;
   margin-top: 20px;
   transition: background-color 0.3s, border 0.3s;
@@ -152,6 +171,12 @@
     display: block;
     width: 25px;
     height: 25px;
+  }
+  .home-content h1 {
+    font-size: 9vw;
+  }
+  .home-content h2 {
+    font-size: 5vw;
   }
   .navbar ul {
     background-color: #999999;

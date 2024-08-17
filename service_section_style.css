@@ -31,7 +31,7 @@
 }
 
 .service-wraper {
-  width: 30%;
+  width: 20%;
   /* max-width: 600px; */
   height: auto;
   padding: 25px;
@@ -153,5 +153,10 @@
 
   .service-heading {
     font-size: calc(var(--headerFontSize) - 2px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .service-wraper {
+    min-width: unset;
   }
 }
