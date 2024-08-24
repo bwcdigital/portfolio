@@ -43,6 +43,9 @@
   word-spacing: 2px;
   font-size: 18px;
   margin-bottom: 25px;
+  &:hover {
+    scale: 1.01;
+  }
 }
 
 .service-heading {
@@ -57,30 +60,38 @@
 .Suppliers-img {
   background-image: url(images/services/sp.jpg);
   background-position: 40%;
-  &:hover {
-    background-image: url(images/services/supplier.png);
-  }
 }
+
+.service-wraper:hover .Suppliers-img {
+  background-image: url(images/services/supplier.png);
+}
+
 .it-img {
   background-image: url(images/services/It-2.jpg);
-  &:hover {
-    background-image: url(images/services/It-3.jpg);
-  }
 }
+
+.service-wraper:hover .it-img {
+  background-image: url(images/services/supplier.png);
+}
+
 .civil-img {
   background-image: url(images/services/civil-3.jpg);
   background-position: 100%;
-  &:hover {
-    background-image: url(images/services/civil-2.jpg);
-  }
 }
+
+.service-wraper:hover .civil-img {
+  background-image: url(images/services/civil-2.jpg);
+}
+
 .electricity-img {
   background-image: url(images/services/electricity-2.jpg);
   background-position: 100%;
-  &:hover {
-    background-image: url(images/services/electricity.jpg);
-  }
 }
+
+.service-wraper:hover .electricity-img {
+  background-image: url(images/services/electricity.jpg);
+}
+
 .service-img {
   width: 100%;
   aspect-ratio: 1;
