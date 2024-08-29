@@ -91,7 +91,7 @@
   /* -webkit-line-clamp: 3; */
   /* Number of lines to show before truncating */
   -webkit-box-orient: vertical;
-  overflow: hidden;
+  overflow: scroll;
   text-overflow: ellipsis;
   transition: max-height 0.3s ease;
   margin-top: 10px;

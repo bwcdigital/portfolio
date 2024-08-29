@@ -15,6 +15,9 @@
   margin: 0;
   color: var(--txtClr);
 }
+::-webkit-scrollbar{
+  display: none;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -23,8 +26,11 @@ html {
   width: 100%;
   height: 100vh;
   background-size: cover;
-  background-color: var(--secondaryColor);
-  background-blend-mode: darken;
+  background-color: red;
+  overflow: hidden;
+  position: relative;
+  /* background-color: var(--secondaryColor);
+  background-blend-mode: darken; */
 }
 
 .nav {
@@ -52,15 +58,11 @@ html {
 }
 
 .logo {
-  display: none;
+  display: block;
   font-weight: 400;
   color: var(--txtClr);
   font-size: 24px;
   /* margin-left: 40px; */
-}
-
-.logo.show {
-  display: block;
 }
 
 .nav-list {
@@ -132,12 +134,14 @@ html {
 }
 
 .home-content {
+  position: relative;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
   margin-left: 6vw;
   height: 95%;
+  z-index: 1;
   /* text-align: center; */
   gap: 20px;
 }
@@ -181,7 +185,24 @@ html {
   text-decoration: none;
   color: white;
 }
-
+.video-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  transform: rotate(180deg);
+  background-color: green;
+  z-index: 0;
+}
+.bgvideo{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(2);
+}
 @media (max-width: 600px) {
   .nav {
     justify-content: space-between !important;
@@ -198,7 +219,11 @@ html {
   .home-content h2 {
     font-size: 5vw;
   }
-
+  .bgvideo{
+    width: auto;
+    filter: saturate(3);
+    transform: translateX(-20%);
+  }
   .dropdown-content {
     border-radius: 10px;
     box-shadow: var(--boxShadow);
