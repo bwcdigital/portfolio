@@ -66,21 +66,21 @@
 
 .btn {
   width: 100%;
-  max-width: 200px;
   height: 50px;
-  padding: 10px;
+  max-width: 200px;
   margin-top: 20px !important;
+  padding: 10px;
+  margin-bottom: 20px;
   font-size: 1.1rem;
   border-radius: 10px;
-  /* background-color: rgba(255, 255, 255, 0.1); */
-  background-color: transparent;
-  margin-bottom: 20px;
+  border-color: 1px solid var(--txtClr);
   font-family: Inter, var(--default-font-family);
   font-weight: 600;
 }
 
 .btn:hover {
-  background-color: var(--hoverColor) !important;
+  box-shadow: var(--boxShadow) !important;
+  background-color: transparent !important;
 }
 .contact-item a:hover {
   text-decoration: none;
@@ -120,7 +120,8 @@
   color: var(--txtClr);
   font-size: 18px;
   &:hover {
-    color: var(--hoverColor);
+    transition: 0.3s ease-in;
+    color: var(--primaryColor);
     font-weight: 600;
   }
 }
@@ -128,11 +129,41 @@
 .contact-form {
   font-family: Inter, var(--default-font-family);
 }
-
+.contact-form input[type="text"],
+input[type="email"] {
+  border: none !important;
+  outline: none !important;
+}
 /* Media Queries for Responsiveness */
+
+/* Medium devices (portrait tablets and small desktops, 900px and down) */
+@media (max-width: 900px) {
+  .contact-container {
+    padding: 20px;
+  }
+  .contact-heading {
+    font-size: calc(var(--headerFontSize) - 5px);
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 100%;
+  }
+
+  .btn {
+    max-width: 150px;
+  }
+  .contact-details {
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 /* Small devices (phones, 600px and down) */
 @media (max-width: 600px) {
+  #contact-section {
+    padding: 2.5rem 0 0 !important;
+  }
   .contact-heading {
     font-size: calc(var(--headerFontSize) - 10px);
   }
@@ -147,8 +178,11 @@
 
   .contact-form,
   .contact-info {
+    padding: 20px;
     width: 100%;
     min-width: unset;
+    border-radius: 10px;
+    box-shadow: var(--boxShadow);
   }
 
   .btn {
@@ -171,25 +205,5 @@
   .contact-subheading {
     font-size: 25px;
     font-weight: 500;
-  }
-}
-
-/* Medium devices (portrait tablets and small desktops, 900px and down) */
-@media (max-width: 900px) {
-  .contact-heading {
-    font-size: calc(var(--headerFontSize) - 5px);
-  }
-
-  .contact-form,
-  .contact-info {
-    width: 90%;
-  }
-
-  .btn {
-    max-width: 150px;
-  }
-  .contact-details {
-    justify-content: center;
-    align-items: center;
   }
 }

@@ -25,7 +25,7 @@
   box-shadow: var(--boxShadow);
   height: fit-content;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 10px;
   word-spacing: 2px;
   font-size: 18px;
   align-items: center !important;
@@ -91,7 +91,7 @@
   /* -webkit-line-clamp: 3; */
   /* Number of lines to show before truncating */
   -webkit-box-orient: vertical;
-  overflow: scroll;
+  overflow: hidden;
   text-overflow: ellipsis;
   transition: max-height 0.3s ease;
   margin-top: 10px;
@@ -104,6 +104,7 @@
   border: none;
   /* padding: 10px 15px; */
   cursor: pointer;
+  margin: 10px 0 !important;
 }
 
 .read-more-btn :focus {
@@ -128,10 +129,10 @@
 @media (max-width: 600px) {
   .project-container {
     flex-direction: column;
-    padding: 20px;
+    padding: 0px !important;
   }
   .project-wraper {
-    width: 90%;
+    width: 100%;
     height: auto;
     margin-top: 20px;
     min-width: unset;
