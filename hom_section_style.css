@@ -1,8 +1,8 @@
 :root {
   --blue: #3498db;
   --txtClr: #d4f1f4;
-  --primaryColor: #189ab4;
-  --secondaryColor: #05445e;
+  --primaryColor: #05445e;
+  --secondaryColor: #189ab4;
   --hoverColor: #2e8bc0;
   --headerFontSize: 50px;
   --headerFontWeight: 700;
@@ -15,41 +15,36 @@
   margin: 0;
   color: var(--txtClr);
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 html {
   scroll-behavior: smooth;
 }
 #home {
-  /* background-image: url(https://plus.unsplash.com/premium_photo-1685086785054-d047cdc0e525?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D); */
+  position: relative;
   width: 100%;
   height: 100vh;
   background-size: cover;
-  background-color: red;
+
   overflow: hidden;
-  position: relative;
-  /* background-color: var(--secondaryColor);
-  background-blend-mode: darken; */
+  background-color: var(--primaryColor);
 }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px !important;
-  padding-left: 20px !important;
-  align-items: center;
-  /* gap: 50px; */
-  position: sticky;
+  position: absolute;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px !important;
   background-color: var(--primaryColor);
-
   font-weight: 500;
   font-size: 18px;
-  padding: 10px 20px;
   transition: 0.3s;
+  z-index: 1000;
 }
 .navbar img {
   display: none;
@@ -137,12 +132,10 @@ html {
   position: relative;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
   margin-left: 6vw;
   height: 95%;
   z-index: 1;
-  /* text-align: center; */
   gap: 20px;
 }
 
@@ -155,8 +148,7 @@ html {
 .home-content h2 {
   font-size: 1.5vw;
   /* color: rgb(207, 165, 255); */
-  color: white;
-  font-weight: 400;
+  font-weight: 600;
   font-style: italic;
   color: var(--primaryColor);
 }
@@ -185,7 +177,7 @@ html {
   text-decoration: none;
   color: white;
 }
-.video-container{
+.video-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -194,10 +186,9 @@ html {
   object-fit: cover;
   overflow: hidden;
   transform: rotate(180deg);
-  background-color: green;
   z-index: 0;
 }
-.bgvideo{
+.bgvideo {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -219,7 +210,7 @@ html {
   .home-content h2 {
     font-size: 5vw;
   }
-  .bgvideo{
+  .bgvideo {
     width: auto;
     filter: saturate(3);
     transform: translateX(-20%);

@@ -25,6 +25,7 @@
   max-width: 100%; /* Ensure images don’t overflow the container */
   height: 200px; /* Maintain aspect ratio */
   box-shadow: var(--boxShadow);
+  border-radius: 10px;
 }
 
 .client-heading {

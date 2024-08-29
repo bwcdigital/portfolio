@@ -22,10 +22,10 @@
   width: 80%;
   /* max-width: 600px; */
   height: auto;
-  padding: 25px;
+  padding: 0 25px;
   box-shadow: var(--boxShadow);
   text-align: justify;
-  border-radius: 15px;
+  border-radius: 10px;
   word-spacing: 2px;
   font-size: 18px;
   margin-bottom: 50px;
@@ -38,23 +38,6 @@
 }
 
 /* Media Queries for Responsiveness */
-
-/* Small devices (phones, 600px and down) */
-@media (max-width: 600px) {
-  .about-content {
-    width: 95%;
-    padding: 20px;
-    font-size: 16px;
-  }
-
-  .about-us {
-    font-size: 40px !important;
-  }
-
-  .about-text {
-    font-size: 18px;
-  }
-}
 
 /* Medium devices (portrait tablets and small desktops, 900px and down) */
 @media (max-width: 900px) {
@@ -69,5 +52,22 @@
 
   .about-text {
     font-size: 19px;
+  }
+}
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .about-content {
+    width: 95%;
+    padding: 8px 20px 20px;
+    font-size: 16px;
+  }
+
+  .about-us {
+    font-size: 40px !important;
+  }
+
+  .about-text {
+    font-size: 18px;
   }
 }
