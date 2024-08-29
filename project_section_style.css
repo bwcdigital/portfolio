@@ -4,7 +4,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgb(39, 39, 39), rgb(45, 71, 143));
+  background-color: var(--secondaryColor);
   justify-content: center;
   text-align: center;
 }
@@ -22,12 +22,9 @@
 
 .project-wraper {
   width: 20%;
-  /* max-width: 600px; */
+  box-shadow: var(--boxShadow);
   height: fit-content;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(0.2rem);
-  border: 1px solid white;
   border-radius: 15px;
   word-spacing: 2px;
   font-size: 18px;
@@ -46,7 +43,7 @@
 .waste_water_img {
   width: 100%;
   aspect-ratio: 1;
-  border-radius: 8px 8px 0 0;
+  border-radius: 8px;
   background-position: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -76,8 +73,8 @@
   font-weight: var(--headerFontWeight);
 }
 
-.sub-heading {
-  color: var(--subheadingTxtClr);
+.project-wraper .sub-heading {
+  color: var(--txtClr);
   text-align: left;
   font-size: 25px !important;
 }
