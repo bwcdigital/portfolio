@@ -1,26 +1,16 @@
-:root {
-  --blue: rgb(27, 78, 218) !important;
-  --txtClr: whitesmoke !important;
-  --headingTxtClr: #555;
-  --subheadingTxtClr: #b0bfdd;
-  --headerFontSize: 50px;
-  --headerFontWeight: 700;
-  --smallScreenFontSize: 40px;
-}
 #Service-section {
   padding: 2.5rem 0;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgb(58, 58, 58), rgb(15, 44, 122));
+  background-color: var(--primaryColor);
   justify-content: center;
   text-align: center;
 }
 
 .services-container {
   width: 100%;
-  height: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -32,30 +22,25 @@
 
 .service-wraper {
   width: 20%;
-  /* max-width: 600px; */
   height: auto;
+  aspect-ratio: 0.6;
   padding: 25px;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(0.2rem);
-  border: 1px solid white;
+  background-color: var(--primaryColor);
+  box-shadow: var(--boxShadow);
+  backdrop-filter: blur(0.3rem);
   text-align: justify;
   border-radius: 15px;
-  word-spacing: 2px;
   font-size: 18px;
-  margin-bottom: 25px;
-  &:hover {
-    scale: 1.01;
-  }
 }
 
 .service-heading {
   font-size: var(--headerFontSize);
   font-weight: var(--headerFontWeight);
-  margin-bottom: 45px;
+  margin-bottom: 20px;
 }
 
-.sub-heading {
-  color: rgb(176, 191, 221) !important;
+.service-wraper .sub-heading {
+  color: var(--textClr);
 }
 .Suppliers-img {
   background-image: url(images/services/sp.jpg);
@@ -71,14 +56,13 @@
 }
 
 .service-wraper:hover .it-img {
-  background-image: url(images/services/supplier.png);
+  background-image: url(images/services/It-3.jpg);
 }
 
 .civil-img {
   background-image: url(images/services/civil-3.jpg);
   background-position: 100%;
 }
-
 .service-wraper:hover .civil-img {
   background-image: url(images/services/civil-2.jpg);
 }
@@ -101,8 +85,11 @@
   transition: 1s;
   overflow: hidden;
 }
-.service-content {
+.service-content,.text-content {
   margin-top: 10px;
+  width: 100%;
+  aspect-ratio: 1.5;
+  overflow-y: scroll;
 }
 /* Media Queries for Responsiveness */
 
@@ -152,9 +139,6 @@
 
 /* Medium devices (portrait tablets and small desktops, 900px and down) */
 @media screen and (max-width: 900px) {
-  .services-container {
-  }
-
   .service-wraper {
     width: 90%;
     min-width: 320px;

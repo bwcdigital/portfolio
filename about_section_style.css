@@ -1,22 +1,17 @@
 /* -----About Section Style----- */
 .about-section {
-  padding: 2.5rem 0;
   width: 100vw;
   height: auto;
-  background-image: url(images/About_profile/about.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.7);
-  background-blend-mode: darken;
+  padding: 2.5rem 0;
   display: flex;
   flex-direction: column;
-  gap: 50px;
   justify-content: center;
   align-items: center;
+  background-color: var(--secondaryColor);
+  gap: 50px;
 }
 
 .about-us {
-  color: var(--txtClr);
   font-size: var(--headerFontSize);
   font-weight: var(--headerFontWeight);
   text-align: center;
@@ -28,9 +23,7 @@
   /* max-width: 600px; */
   height: auto;
   padding: 25px;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(0.2rem);
-  border: 1px solid white;
+  box-shadow: var(--boxShadow);
   text-align: justify;
   border-radius: 15px;
   word-spacing: 2px;
@@ -39,9 +32,9 @@
 }
 
 .about-text {
-  color: white;
   font-weight: 600;
   font-size: 20px;
+  /* color: var(--primary); */
 }
 
 /* Media Queries for Responsiveness */

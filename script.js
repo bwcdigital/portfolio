@@ -1,28 +1,28 @@
-document.addEventListener("DOMContentLoaded", function () {
-  var wd = window.innerWidth;
-  if (wd > 600) {
-    var logo = document.querySelector(".logo");
-    logo.classList.remove("show");
-  }
-  window.addEventListener("scroll", function () {
-    var scrollPosition = window.scrollY;
-    var logo = document.querySelector(".logo");
+// document.addEventListener("DOMContentLoaded", function () {
+//   var wd = window.innerWidth;
+//   if (wd > 600) {
+//     var logo = document.querySelector(".logo");
+//     logo.classList.remove("show");
+//   }
+//   window.addEventListener("scroll", function () {
+//     var scrollPosition = window.scrollY;
+//     var logo = document.querySelector(".logo");
 
-    console.log("Scroll position:", scrollPosition);
+//     console.log("Scroll position:", scrollPosition);
 
-    if (wd > 600) {
-      if (logo) {
-        if (scrollPosition >= 0.5 * window.innerHeight) {
-          logo.classList.add("show");
-        } else {
-          logo.classList.remove("show");
-        }
-      } else {
-        console.warn("Logo element not found!");
-      }
-    } else logo.classList.add("show");
-  });
-});
+//     if (wd > 600) {
+//       if (logo) {
+//         if (scrollPosition >= 0.5 * window.innerHeight) {
+//           logo.classList.add("show");
+//         } else {
+//           logo.classList.remove("show");
+//         }
+//       } else {
+//         console.warn("Logo element not found!");
+//       }
+//     } else logo.classList.add("show");
+//   });
+// });
 
 var slideMenu = document.getElementById("ulMenu");
 var closeIcon = document.getElementById("closeIcon");
@@ -54,7 +54,7 @@ function changeBackground() {
 }
 
 // Change the background image every 5 seconds (5000 milliseconds)
-setInterval(changeBackground, 5000);
+// setInterval(changeBackground, 5000);
 
 // document.addEventListener("DOMContentLoaded", function () {
 //   // Get all buttons and text contents

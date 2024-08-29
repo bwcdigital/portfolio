@@ -1,14 +1,4 @@
 /* -----Footer Style----- */
-.footer-container {
-  background-image: linear-gradient(
-    rgb(39, 39, 39),
-    rgb(27, 78, 218)
-  ) !important;
-  /* background-color: rgb(27, 78, 218); */
-  color: whitesmoke !important;
-  padding: 50px 50px 0 50px !important;
-}
-
 .nav-item a {
   text-decoration: none !important;
   color: whitesmoke !important;
@@ -41,12 +31,14 @@
   list-style-type: none !important;
 }
 
+.footer-link a:hover {
+  transition: 0.4s;
+  color: var(--secondaryColor) !important;
+  font-weight: 600;
+}
+
 .footer-container {
-  background-image: linear-gradient(
-    rgb(39, 39, 39),
-    rgb(27, 78, 218)
-  ) !important;
-  /* background-color: rgb(27, 78, 218); */
+  background-color: var(--primaryColor);
   color: whitesmoke !important;
   padding: 50px 50px 0 50px !important;
 }

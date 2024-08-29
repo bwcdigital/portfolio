@@ -7,7 +7,8 @@
   gap: 20px; /* Reduce gap to improve spacing on smaller screens */
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgb(39, 39, 39), rgb(36, 57, 116));
+  background-color: var(--primaryColor);
+  backdrop-filter: blur(0.7rem);
   box-sizing: border-box; /* Ensure padding is included in total width/height */
 }
 
@@ -17,12 +18,13 @@
   display: flex;
   gap: 20px; /* Reduce gap to improve spacing on smaller screens */
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 
 .client-logo img {
   max-width: 100%; /* Ensure images don’t overflow the container */
-  height: auto; /* Maintain aspect ratio */
+  height: 200px; /* Maintain aspect ratio */
+  box-shadow: var(--boxShadow);
 }
 
 .client-heading {
@@ -57,11 +59,18 @@
   }
 
   .client-logo-container {
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
   }
 
+  .client-logo {
+    width: 90%;
+    height: fit-content; /* Maintain aspect ratio */
+  }
   .client-logo img {
-    width: 150px; /* Further adjust image size for smaller screens */
+    width: 100%; /* Further adjust image size for smaller screens */
+    height: auto; /* Maintain aspect ratio */
   }
 
   .client-heading {
